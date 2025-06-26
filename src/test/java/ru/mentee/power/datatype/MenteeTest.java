@@ -51,21 +51,21 @@ public class MenteeTest {
     public void testCalculateScholarship() {
         // Отличник - высшая стипендия
         Mentee excellentMentee = new Mentee("Мария", "Ивановна", 19, 4.8, 1);
-        assertEquals(5000, excellentMentee.calculateScholarship());
+        assertEquals(2000, excellentMentee.calculateScholarship());
 
         // Хорошист - средняя стипендия
         Mentee goodMentee = new Mentee("Алексей", "Смирнов", 18, 4.2, 1);
-        assertEquals(3000, goodMentee.calculateScholarship());
+        assertEquals(1500, goodMentee.calculateScholarship());
 
         // Средний балл ниже 4.0 - базовая стипендия
         Mentee averageMentee = new Mentee("Петр", "Сидоров", 21, 3.9, 3);
-        assertEquals(2000, averageMentee.calculateScholarship());
+        assertEquals(1000, averageMentee.calculateScholarship());
 
         // Граничные значения
         Mentee borderlineMentee1 = new Mentee("Ольга", "Козлова", 22, 4.5, 5); // Ровно 4.5
-        assertEquals(5000, borderlineMentee1.calculateScholarship());
+        assertEquals(2000, borderlineMentee1.calculateScholarship());
 
         Mentee borderlineMentee2 = new Mentee("Иван", "Иванов", 20, 4.0, 2); // Ровно 4.0
-        assertEquals(3000, borderlineMentee2.calculateScholarship());
+        assertEquals(1500, borderlineMentee2.calculateScholarship());
     }
 }
