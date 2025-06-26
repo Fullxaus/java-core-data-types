@@ -15,6 +15,7 @@ public class MenteeDemo {
         System.out.println(mentee1.getLevel());
         System.out.println("Проверка,является ли Иван Новиков отличником");
         System.out.println(mentee1.isExcellent());
+        System.out.println(mentee1.calculateScholarship());
         System.out.println("------------");
         System.out.println(mentee2.getFirstName());
         System.out.println(mentee2.getLastName());;
@@ -24,6 +25,7 @@ public class MenteeDemo {
         System.out.println("Проверка,является ли Владимир Богданов отличником");
         System.out.println(mentee2.isExcellent());
         System.out.println(mentee2.advanceToNextLevel());
+        System.out.println(mentee2.calculateScholarship());
 
 
 

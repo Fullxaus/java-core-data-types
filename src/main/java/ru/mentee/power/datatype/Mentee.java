@@ -50,11 +50,11 @@ public class Mentee {
      */
     public int calculateScholarship() {
         if (averageGrade >= 4.5 && averageGrade <= 5.0) {
-            return 5000;
-        } else if (averageGrade >= 4.0 && averageGrade < 4.5) {
-            return 3000;
-        } else if (averageGrade >= 3.5 && averageGrade < 4.0) {
             return 2000;
+        } else if (averageGrade >= 4.0 && averageGrade < 4.5) {
+            return 1500;
+        } else if (averageGrade >= 3.5 && averageGrade < 4.0) {
+            return 1000;
         } else {
             return 0;
         }
